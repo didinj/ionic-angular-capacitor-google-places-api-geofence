@@ -1,8 +1,13 @@
 {
   "name": "ionic-geofence",
-  "app_id": "",
-  "type": "ionic-angular",
   "integrations": {
-    "cordova": {}
-  }
+    "capacitor": {}
+  },
+  "type": "angular-standalone",
+  "proxies": [
+    {
+      "path": "/googleapi",
+      "proxyUrl": "https://maps.googleapis.com"
+    }
+  ]
 }
